@@ -1,0 +1,2 @@
+sed -i -e "s/var currentOwner = React.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner;/var currentDispatcher = React.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentDispatcher;/g" node_modules/react-cache/cjs/react-cache.development.js
+sed -i -e "s/var dispatcher = currentOwner.currentDispatcher;/var dispatcher = currentDispatcher.current;/g" node_modules/react-cache/cjs/react-cache.development.js
