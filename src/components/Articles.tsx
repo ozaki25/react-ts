@@ -1,6 +1,6 @@
 import React from 'react';
-import { articlesResource } from '../resources/articlesResources';
-import { Article } from '../types/Article';
+import { articlesResource } from 'src/resources/articlesResources';
+import { Article } from 'src/types/Article';
 
 interface Props {
   articles: Article[];

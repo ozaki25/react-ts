@@ -1,9 +1,10 @@
 import React, { Component, Suspense } from 'react';
-import './App.css';
-import Articles from './components/Articles';
-import Counter from './components/Counter';
-import Loading from './components/Loading';
-import logo from './logo.svg';
+
+import 'src/App.css';
+import Articles from 'src/components/Articles';
+import Counter from 'src/components/Counter';
+import Loading from 'src/components/Loading';
+import logo from 'src/logo.svg';
 
 class App extends Component {
   public render() {
