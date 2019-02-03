@@ -25,6 +25,7 @@
     "@storybook/addons": "^4.1.11",
     "@storybook/react": "^4.1.11",
     "@types/storybook__addon-actions": "^3.4.1",
+    "@types/storybook__addon-knobs": "^4.0.0",
     "@types/styled-components": "^4.1.6",
     "babel-loader": "^8.0.5",
     "tslint": "^5.12.1",
