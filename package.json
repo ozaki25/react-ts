@@ -38,7 +38,8 @@
     "eject": "react-scripts eject",
     "postinstall": "sh ./scripts/postinstall.sh",
     "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "deploy-storybook": "build-storybook -s public && cd storybook-static && git init && git add -A && git commit -m 'deploy storybook' && git push -f git@github.com:ozaki25/react-ts.git master:gh-pages"
   },
   "eslintConfig": {
     "extends": "react-app"
