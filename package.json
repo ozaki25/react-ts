@@ -4,10 +4,11 @@
   "private": true,
   "dependencies": {
     "@types/jest": "^23.3.13",
-    "@types/node": "^10.12.19",
-    "@types/react": "^16.7.22",
+    "@types/node": "^10.12.21",
+    "@types/react": "^16.8.1",
     "@types/react-cache": "^2.0.0",
     "@types/react-dom": "^16.0.11",
+    "@types/storybook__react": "^4.0.0",
     "react": "^16.8.0-alpha.1",
     "react-cache": "^2.0.0-alpha.1",
     "react-dom": "^16.8.0-alpha.1",
@@ -16,7 +17,13 @@
     "typescript": "^3.2.4"
   },
   "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@storybook/addon-actions": "^4.1.11",
+    "@storybook/addon-links": "^4.1.11",
+    "@storybook/addons": "^4.1.11",
+    "@storybook/react": "^4.1.11",
     "@types/styled-components": "^4.1.6",
+    "babel-loader": "^8.0.5",
     "tslint": "^5.12.1",
     "tslint-config-prettier": "^1.17.0",
     "tslint-plugin-prettier": "^2.0.1",
@@ -27,7 +34,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "postinstall": "sh ./scripts/postinstall.sh"
+    "postinstall": "sh ./scripts/postinstall.sh",
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public"
   },
   "eslintConfig": {
     "extends": "react-app"
