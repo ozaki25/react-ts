@@ -20,6 +20,8 @@ const LoadingContent = styled.div`
   animation: ${opacity} 2s linear infinite;
 `;
 
-const Loading = () => <LoadingContent>Loading...</LoadingContent>;
+function Loading() {
+  return <LoadingContent>Loading...</LoadingContent>;
+}
 
 export default Loading;
